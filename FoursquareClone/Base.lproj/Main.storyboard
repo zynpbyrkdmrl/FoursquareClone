@@ -90,11 +90,11 @@
         <scene sceneID="5nd-gf-8ug">
             <objects>
                 <viewController id="THY-Le-5MJ" customClass="PlacesVC" customModule="FoursquareClone" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="L5n-Lf-iMo">
+                    <view key="view" contentMode="scaleToFill" id="L5n-Lf-iMo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Dyo-V6-zSa">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Dyo-V6-zSa">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -129,11 +129,11 @@
             <objects>
                 <viewController id="PYa-7S-XA2" customClass="DetailsVC" customModule="FoursquareClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HHl-aJ-ntj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3jT-5O-pwM">
-                                <rect key="frame" x="0.0" y="61" width="414" height="226"/>
+                                <rect key="frame" x="0.0" y="105" width="414" height="226"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="226" id="KI0-Yg-Y92"/>
                                 </constraints>
@@ -166,7 +166,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IJZ-Sj-UYI">
-                                <rect key="frame" x="0.0" y="534" width="421" height="342"/>
+                                <rect key="frame" x="0.0" y="578" width="421" height="318"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="q9n-u5-RRL"/>
@@ -208,7 +208,7 @@
             <objects>
                 <viewController id="7TU-PR-aOi" customClass="AddPlaceVC" customModule="FoursquareClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9sW-yL-jBl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Place Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P94-5r-GLk">
@@ -231,7 +231,7 @@
                                 <rect key="frame" x="59" y="378" width="297" height="307"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pI-tJ-obd">
-                                <rect key="frame" x="159" y="699" width="114" height="73"/>
+                                <rect key="frame" x="159" y="719" width="114" height="73"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="HSD-oA-l8A"/>
                                 </constraints>
@@ -308,7 +308,7 @@
                     <navigationItem key="navigationItem" id="hrq-US-owj"/>
                     <connections>
                         <outlet property="mapView" destination="RWe-7V-c2N" id="ol8-rx-l5y"/>
-                        <segue destination="THY-Le-5MJ" kind="presentation" identifier="fromMapVCtoPlacesVC" modalPresentationStyle="fullScreen" id="xWQ-Zb-9hp"/>
+                        <segue destination="rAu-oH-b1h" kind="presentation" identifier="fromMapVCtoPlacesVC" modalPresentationStyle="fullScreen" id="Qk6-bB-af1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bje-rD-u2H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -355,7 +355,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xWQ-Zb-9hp"/>
+        <segue reference="Qk6-bB-af1"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="select" width="278" height="229"/>
